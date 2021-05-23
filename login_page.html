@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>EPass Registration</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{{url_for('static',filename='assets/img/favicon.png')}}" rel="icon">
+  <link href="{{url_for('static',filename='assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="{{url_for('static',filename='https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Lato:400,300,700,900')}}" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{url_for('static',filename='assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{url_for('static',filename='assets/css/style.css')}}" rel="stylesheet">
+</head>
+<body>
+<header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+        <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About </a></li>
+          <li><a class="nav-link scrollto" href="#register">Register</a></li>
+        </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <h1>Welcome to MYGOV</h1>
+      <h2>Registrations are open for e-pass!</h2>
+      <a href="#register" class="btn-get-started scrollto">Register</a>
+    </div>
+  </section><!-- #hero -->
+
+
+<main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About </h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2">
+            <img src="assets/img/about-img.g"  >
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
+            <h3>Registration Guidelines</h3>
+            <p class="fst-italic">
+              Before Registration check the following points...
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-circle"></i> Check whether your registered details are correct or not.</li>
+              <li><i class="bi bi-check2-circle"></i> After you register,the message will be forwarded to your registered mobile number.</li>
+              <li><i class="bi bi-check2-circle"></i>In case your pass is not confirmed,then it means that the epass for the destination is not allowed.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+
+<section id="register" class="register section-bg">
+    <div class="section-title">
+          <h2>Register </h2>
+    </div>
+    <center>
+<form  method="post" action="/login_page">
+    <label>First Name</label> <input  type="text" name="fname" placeholder="FirstName" required>
+    <br>
+    <br>
+    <label>Last Name</label> <input  type="text" name="lname" placeholder="LastName" required>
+    <br>
+    <br>
+    <label>Email</label><input  type="text" name="email" placeholder="email" required>
+    <br>
+    <br>
+    <label>Source State</label><input  type="text" name="source_state" placeholder="Source" required>
+    <br>
+    <br>
+    <label>Source District</label><input  type="text" name="source" placeholder="district" required>
+    <br>
+    <br>
+    <label>Destination State</label><input  type="text" name="dest_state" placeholder="destination" required>
+    <br>
+    <br>
+    <label>Destination District</label><input  type="text" name="destination" placeholder="district" required>
+    <br>
+    <br>
+    <label>Mobile Number</label> <input  type="number" name="phoneNumber" placeholder="Phone number" required>
+    <br>
+    <br>
+    <label>Travel Date</label><input  type="date" name="trip" placeholder="Travel date" required>
+    <br>
+    <br>
+    <br>
+    <input type="submit" value="Login" >
+
+</form>
+    </center>
+</section>
+<!-- Vendor JS Files -->
+  <script src="{{url_for('static',filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{url_for('static',filename='assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
+  <script src="{{url_for('static',filename='assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <script src="{{url_for('static',filename='assets/vendor/php-email-form/validate.js')}}"></script>
+  <script src="{{url_for('static',filename='assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{{url_for('static',filename='assets/js/main.js')}}"></script>
+</body>
+</html>
